@@ -16,7 +16,40 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: "babel-loader"
+            },
+            {
+                test: /\.css$/,
+                use:[
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    }
+                ]
+            },
+            {
+                test: /.less$/,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'less-loader'
+                    }
+                ]
+            },
+            {
+                test: /.(jpg|png|gif|svg)$/,
+                use: ['url-loader?limit=8192&name=./[name].[ext]']
             }
         ]
+    },
+    devServer: {
+        port: 3005,
+        contentBase: './dist'
     }
 }

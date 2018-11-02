@@ -1,0 +1,62 @@
+.my_unlogin{
+    display: flex;
+    background-image: linear-gradient(90deg,#0af,#0085ff);
+    color: #fff;
+    align-items: center;
+    padding: 20px 20px;
+}
+.my_tx{
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+.my_unlogin_sub{
+    width: auto;
+    height: auto;
+    padding-left: 15px;
+    flex-grow:1;
+}
+.my_unlogin_sub_title{
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.6;
+}
+.my_unlogin_sub_more{
+    margin: 0;
+    line-height: 1.6;
+}
+.my_unlogin_sub_more svg{
+    width: 8px;
+    height: 12px;
+}
+.my_unlogin_go{
+    width: 15px;
+}
+.unlogin_activity{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-bottom:1px solid #ddd ;
+}
+.unlogin_activity .youhui_cont{
+    width: 50%;
+    text-align: center;
+    display: block;
+    padding: 1.2rem 0;
+    border-right: 1px solid #ddd;
+}
+.unlogin_activity .jifen_cont{
+    width: 50%;
+    text-align: center;
+    display: block;
+    padding: 1.2rem 0;
+}
+.unlogin_activity svg{
+    width: 30px;
+}
+.unlogin_activity_word{
+    font-size: 0.8rem;
+    padding: 0.5rem 0 0 0;
+}
+

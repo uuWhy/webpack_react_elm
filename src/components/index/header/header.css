@@ -1,0 +1,57 @@
+.index_header{
+    padding: 15px 20px 0;
+    color: #fff;
+    background-image: linear-gradient(90deg,#0af,#0085ff);
+}
+.index_header .header_title{
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    align-items: center;
+}
+.index_header .index-address{
+    width: 60%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.index-address .address_icon{
+    width: 15px;
+    height: 17px;
+    background: url('./address.png') no-repeat center;
+    background-size: cover;
+}
+.index-address .sj{
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    border-top-color: #fff;
+    margin-top: 3px;
+}
+
+.index-word{
+    margin: 0 10px;
+    font-size: 1rem;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.weather{
+    display: flex;
+    text-align: right;
+    align-items: center;
+
+}
+.weather .weather_today{
+    font-size: 14px;
+    transform: scale(0.8);
+}
+.weather .weather_num{
+    font-size: 18px;
+}
+.weather .weather-icon{
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+}
