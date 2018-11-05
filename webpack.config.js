@@ -2,13 +2,13 @@ const path = require('path');
 
 module.exports = {
     // 入口文件
-    entry: {
+    entry: {// 入口文件。支持数组形式，将加载数组中的所有模块，但以最后一个模块作为输出，对象形式也一样。
         app: './src/index.js'
     },
     // 输出到dist文件夹, 文件名字为bundle.js
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname,'./dist')
+        filename: 'bundle.js',// 打包后的文件名
+        path: path.resolve(__dirname,'./dist')// 打包后的文件存放位置
     },
     module: {
         rules: [
