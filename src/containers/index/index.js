@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import {connect} from 'react-redux';
 import Headersmart from './header';
 import Search from '../../components/index/search/search';
-
+import Hotsmart from './hot';
 
 class Index extends Component{
     render(){
@@ -10,6 +10,7 @@ class Index extends Component{
             <div>
                 <Headersmart/>
                 <Search/>
+                <Hotsmart/>
             </div>
         )
     }
