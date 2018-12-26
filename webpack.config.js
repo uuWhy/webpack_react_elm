@@ -27,6 +27,8 @@ module.exports = {
                     },
                     {
                         loader: 'css-loader'
+                    },{
+                        loader: 'les s-loader'
                     }
                 ]
             },
