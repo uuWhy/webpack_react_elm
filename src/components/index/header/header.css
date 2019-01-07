@@ -6,7 +6,7 @@
 .index_header .header_title{
     display: flex;
     justify-content: space-between;
-    height: 2rem;
+    height: 70px;
     align-items: center;
 }
 .index_header .index-address{
@@ -16,14 +16,14 @@
     align-items: center;
 }
 .index-address .address_icon{
-    width: 15px;
-    height: 17px;
+    width: 30px;
+    height: 34px;
     background: url('./address.png') no-repeat center;
     background-size: cover;
 }
 .index-address .sj{
     border-style: solid;
-    border-width: 4px;
+    border-width: 8px;
     border-color: transparent;
     border-top-color: #fff;
     margin-top: 3px;
@@ -31,7 +31,7 @@
 
 .index-word{
     margin: 0 10px;
-    font-size: 1rem;
+    font-size:.48rem ;
     max-width: 80%;
     white-space: nowrap;
     overflow: hidden;
@@ -44,14 +44,14 @@
 
 }
 .weather .weather_today{
-    font-size: 14px;
+    font-size: 28px;
     transform: scale(0.8);
 }
 .weather .weather_num{
-    font-size: 18px;
+    font-size: 30px;
 }
 .weather .weather-icon{
     margin-left: 5px;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
 }

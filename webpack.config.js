@@ -1,5 +1,5 @@
 const path = require('path');
-
+const px2rem = require('postcss-px2rem');
 module.exports = {
     devtool: '#eval-source-map', // 这个是打包的方式
     mode: 'development',
@@ -20,26 +20,25 @@ module.exports = {
                 loader: "babel-loader",
             },
             {
-                test: /\.css$/,
+                test: /\.(css|less)$/,
                 use:[
                     {
                         loader: 'style-loader'
                     },
                     {
                         loader: 'css-loader'
-                    },{
-                        loader: 'les s-loader'
-                    }
-                ]
-            },
-            {
-                test: /.less$/,
-                use: [
-                    {
-                        loader: 'style-loader'
                     },
                     {
-                        loader: 'css-loader'
+                        loader: require.resolve('postcss-loader'),
+                        options: {
+                            // Necessary for external CSS imports to work
+                            // https://github.com/fac ebookincubator/create-react-app/issues/2677
+                            ident: 'postcss',
+                            plugins: () => [
+                                require('postcss-flexbugs-fixes'),
+                                px2rem({remUnit: 100})
+                            ],
+                        },
                     },
                     {
                         loader: 'less-loader'

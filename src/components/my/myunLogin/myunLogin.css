@@ -43,14 +43,14 @@
     width: 50%;
     text-align: center;
     display: block;
-    padding: 1.2rem 0;
+    padding: 0.6rem 0;
     border-right: 1px solid #ddd;
 }
 .unlogin_activity .jifen_cont{
     width: 50%;
     text-align: center;
     display: block;
-    padding: 1.2rem 0;
+    padding: 0.6rem 0;
 }
 .unlogin_activity svg{
     width: 30px;
