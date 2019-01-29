@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import './footer.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 
 class Footer extends Component{
@@ -27,7 +27,10 @@ class Footer extends Component{
 					</NavLink>
 					</span>
                     <span className='index_footer_a'>
-					<NavLink to="/my"  activeClassName='active'>
+					<NavLink to={{//state为给下一个页面参数
+                        pathname: '/my',
+                        state: { fromDashboard: true }
+                    }}  activeClassName='active'>
 						<svg className='index_footer_icon'  viewBox="-1 0 40 34" version="1.1" xmlns="http://www.w3.org/2000/svg"><g fill="none" fillRule="evenodd" stroke="#666" strokeWidth="4"><g mask="url(#profile-regular.c151d62_c)"><path id="profile-regular.c151d62_a" d="M10 11.833V8.999A8.999 8.999 0 0 1 19 0c4.97 0 9 4.04 9 8.999v2.834l-.013.191C27.657 16.981 23.367 21 19 21c-4.616 0-8.64-4.02-8.987-8.976L10 11.833z"></path></g><g mask="url(#profile-regular.c151d62_d)"><path id="profile-regular.c151d62_b" d="M0 32.675C0 26.763 10.139 22 19.027 22 27.916 22 38 26.763 38 32.757v3.312C38 37.136 37.098 38 35.997 38H2.003C.897 38 0 37.137 0 36.037v-3.362z"></path></g></g></svg>
 						<span className='index_footer_word'>我的</span>
 					</NavLink>

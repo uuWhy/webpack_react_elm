@@ -47,7 +47,16 @@ module.exports = {
             },
             {
                 test: /.(jpg|png|gif|svg)$/,
-                use: ['url-loader?limit=8192&name=./[name].[ext]']
+                use: [
+                    {
+                        loader:'url-loader?limit=8192&name=./[name].[ext]',
+                        options: {
+                            limit: 10000,
+                            name: 'dist/static/[name].[hash:8].[ext]',
+                        }
+                    }
+                ],
+
             }
         ]
     },
